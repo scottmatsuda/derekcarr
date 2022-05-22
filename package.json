@@ -1,6 +1,7 @@
 {
   "name": "derekcarr",
   "version": "0.1.0",
+  "homepage": "https://scottmatsuda.github.io/derekcarr",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -12,6 +13,8 @@
     "axios": "^0.26.1",
     "chart.js": "^3.7.1",
     "chartjs": "^0.3.24",
+    "deploy": "^1.0.3",
+    "gh-pages": "^4.0.0",
     "material-ui": "^0.20.2",
     "node": "^17.7.2",
     "react": "^18.0.0",
@@ -24,6 +27,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
